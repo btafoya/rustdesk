@@ -1,9 +1,8 @@
-name: Mini repro call
+name: Mini repro 2
 on:
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   b:
-    uses: ./.github/workflows/bridge.yml
-    secrets: inherit
+    uses: ./.github/workflows/flutter-build.yml
