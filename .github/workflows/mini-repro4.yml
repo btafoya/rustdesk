@@ -1,0 +1,11 @@
+name: Mini repro 4
+on:
+  workflow_dispatch:
+jobs:
+  b:
+    uses: ./.github/workflows/third-party-RustDeskTempTopMostWindow.yml
+    secrets: inherit
+    with:
+      upload-artifact: true
+      target: windows-2022
+      platform: x64
