@@ -3,7 +3,7 @@ name: Build custom clients
 on:
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   build:
     uses: ./.github/workflows/flutter-build.yml
