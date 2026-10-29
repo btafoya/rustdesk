@@ -1,0 +1,10 @@
+name: Mini caller
+on:
+  workflow_dispatch:
+jobs:
+  b:
+    uses: ./.github/workflows/mini-repro6.yml
+    secrets: inherit
+    with:
+      upload-artifact: true
+      upload-tag: "nightly"
