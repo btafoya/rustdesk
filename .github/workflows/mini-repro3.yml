@@ -1,0 +1,10 @@
+name: Mini repro 3
+on:
+  workflow_dispatch:
+jobs:
+  b:
+    uses: ./.github/workflows/flutter-build.yml
+    secrets: inherit
+    with:
+      upload-artifact: true
+      upload-tag: "nightly"
