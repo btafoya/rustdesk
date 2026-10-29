@@ -1,0 +1,9 @@
+name: Mini repro call
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  b:
+    uses: ./.github/workflows/bridge.yml
+    secrets: inherit
