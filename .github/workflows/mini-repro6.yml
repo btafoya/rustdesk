@@ -1,3 +1,6 @@
+on:
+  workflow_call:
+
 jobs:
   validate-update-metadata-keys:
     runs-on: ubuntu-22.04
