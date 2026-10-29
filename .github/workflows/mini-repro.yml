@@ -1,8 +1,0 @@
-name: Mini repro 2
-on:
-  workflow_dispatch:
-permissions:
-  contents: read
-jobs:
-  b:
-    uses: ./.github/workflows/flutter-build.yml
